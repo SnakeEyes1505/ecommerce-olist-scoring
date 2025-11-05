@@ -132,6 +132,12 @@ Dimensions:
 
 SQL: [`sql/product_scoring.sql`](sql/product_scoring.sql)
 
+### Product score distribution
+
+![Product score distribution](images/product_tier.png)
+
+![Product score distribution](images/product_values.png)
+
 ### Customer score
 
 RFM-style scoring per customer:
@@ -148,6 +154,12 @@ Combined into a `customer_value_score` and segments like:
 - `At Risk`
 
 SQL: [`sql/customer_scoring.sql`](sql/customer_scoring.sql)
+
+### Customer score distribution
+
+![Customer score distribution](images/Customer_tier.png)
+
+![Customer score distribution](images/Customer_values.png)
 
 ## How to run
 
