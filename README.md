@@ -34,15 +34,15 @@ These questions drove how I designed the data model and scores.
 
 Goal: turn the raw Olist CSV tables into a consistent **core layer** in BigQuery.
 
-Main steps (see [`sql/01_olist_core_views.sql`](sql/01_olist_core_views.sql)):
+Main steps (see [`sql/olist_core.sql`](sql/olist_core.sql)):
+
+(see [`sql/01_olist_core_views.sql`](sql/01_olist_core_views.sql)):
 
 - `v_orders_enriched`  
   - adds `purchase_date`, `delivered_date`, `estimated_date`  
   - computes `delivery_delay_days` (positive = late, negative = early)
 - `v_reviews_latest`  
   - keeps one latest review per `order_id`
-- `v_customers`, `v_sellers`, `v_products`  
-  - tidy views for basic dimensions (location, category, product size)
 - `v_payments_by_order`  
   - aggregates multiple payment rows per order
 
