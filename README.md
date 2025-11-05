@@ -21,6 +21,16 @@ I worked in **BigQuery Sandbox**, built core views, and then created three mart 
 
 ### Seller score
 
+-- Seller scoring pipeline
+-- Input: Olist core tables in BigQuery (orders, order_items, reviews, payments, sellers, products)
+-- Output: olist_mart.seller_scores
+-- Dimensions:
+--   1) Delivery reliability    (late_rate, avg_delay_days, overall_review)
+--   2) Product quality         (bad_review_rate, product_avg_review)
+--   3) Pricing fairness        (price_index vs market median)
+--   4) Shipping fairness       (freight_per_km, shipping_review)
+-- Each dimension is normalized to 0–100 using percentile ranks and combined into an overall score and tier.
+
 Dimensions:
 
 1. **Delivery reliability**
