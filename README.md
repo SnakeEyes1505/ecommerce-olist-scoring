@@ -114,6 +114,10 @@ Each dimension is normalized (0–100) and combined into an overall seller score
 
 SQL: see [`sql/seller_scoring.sql`](sql/seller_scoring.sql)
 
+### Seller score distribution
+![Seller score distribution](images/Picture1Seller score.png)
+![Seller score distribution](images/Picture2Seller score.png)
+
 ### Product score
 
 Dimensions:
